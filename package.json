@@ -1,0 +1,45 @@
+{
+  "name": "imageprocessing_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "npm run build && node dist/index.js",
+    "jasmine": "jasmine",
+    "test": "npm run build && npm run jasmine",
+    "nodemon": "nodemon src/index.ts",
+    "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "eslint": "eslint 'src/**/*.ts'"
+  },
+  "author": "jane",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "@types/jasmine": "^4.3.1",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.11.16",
+    "@types/sharp": "^0.31.0",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "eslint": "^8.30.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "app-root-path": "^3.1.0",
+    "express": "^4.18.2",
+    "jasmine": "^4.5.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "lodash": "^4.17.21",
+    "sharp": "^0.31.2",
+    "supertest": "^6.3.3"
+  }
+}
